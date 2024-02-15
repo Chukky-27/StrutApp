@@ -84,13 +84,9 @@ background-color: #916BBF;
     line-height: normal;
 }
 .box2 form #mycheckbox:hover{
-    cursor:pointer;
-    transition: 0.5s all ease-out;    
+    cursor:pointer;      
 }
 
-#mycheckbox:checked + label+ .mycheckbox{
-    color: #916BBF;
-}
 .box2 form .pop{
     color: #916BBF;    
     font-size: 16px;
