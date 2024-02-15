@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 100%;
+    height: 1024px;
+    background: #FFF;
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: red; */
+}
+
+.left .logo{
+width: 720px;
+height: 1024px;
+flex-shrink: 0;
+border-radius: 0px 73px 0px 0px;
+/* background: url(<path-to-image>), lightgray 0% 0% / 50px 50px repeat; */
+background-color: #916BBF;
+}
+
+.logo .grp{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.logo .txt{
+    border: 40px;   
+    padding-left: 10px;
+    margin-left: 10px;    
+}
+
+.left .text{
+    color: #FFF;    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.box2{ 
+    width: 100%;
+    height: 1024px;
+    background-color: white;
+    padding-left: 10%;   
+}
+.box2 .account{
+    color: #000000;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 150px;
+    margin-left: 5%;
+    font-style: normal;
+    line-height: normal;
+}
+
+.box2 form{
+    max-width: 500px;
+    margin-top: 5%;    
+}
+
+.box2 form input[type="text"]{
+    margin-top: 20px;
+    padding: 20px 10px 20px;
+    width: 463px;
+    height: 71px;
+    border: 1px solid #D0D0D0;;
+    outline: none;
+    font-size: 18px;
+    color: #00000079;
+    border-radius: 10px;
+    background-color: #FFFFFF;    
+}
+
+.box2 form #mycheckbox{
+    margin-top: 7%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.box2 form #mycheckbox:hover{
+    cursor:pointer;
+    transition: 0.5s all ease-out;    
+}
+
+#mycheckbox:checked + label+ .mycheckbox{
+    color: #916BBF;
+}
+.box2 form .pop{
+    color: #916BBF;    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+.box2 form input[type="submit"]{
+    margin-top: 50px;    
+    padding: 15px 70px;
+    background-color: #916BBF;
+    color: #ffffff;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+    width: 463px;
+    height: 71px;
+    flex-shrink: 0;  
+}
+
+.box2 form input[type="submit"]:hover{
+    background-color: #FCF7E8;
+    color: #000000;
+} 
+
+.box2 .social input[type="submit"]{
+    margin-top: 50px;
+    padding: 15px 70px;
+    font-size: 10px;    
+    width: 220px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;   
+    border: none;
+    outline: none; 
+    cursor:pointer; 
+    /* transition: all 0.5s ease; */
+}
+/* .box2 .social input[type="submit"]{
+    background-color: #FCF7E8;
+    color: #000000;
+} */
+
+.box2 .social #google{
+    background: rgba(204, 76, 76, 0.10);  
+    color: #E33E2B;   
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+
+.box2 .social #facebook{      
+    background: rgba(76, 142, 204, 0.09);
+    color: #1877F2;   
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
