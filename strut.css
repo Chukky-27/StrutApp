@@ -1,153 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 .box{
     width: 100%;
-    height: 1024px;
+    height: 100vh;
     background: #FFF;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between; 
     /* background-color: red; */
 }
 
-.left .logo{
-width: 720px;
-height: 1024px;
-flex-shrink: 0;
-border-radius: 0px 73px 0px 0px;
-/* background: url(<path-to-image>), lightgray 0% 0% / 50px 50px repeat; */
-background-color: #916BBF;
-}
+.box .left {
+    width: 50%;
+    height: 100vh;
+    background-color: #916bbf;
+  }
 
-.logo .grp{
-    margin-top: 25px;
-    margin-left: 40px;
-}
-.logo .txt{
-    border: 40px;   
-    padding-left: 10px;
-    margin-left: 10px;    
-}
-
-.left .text{
-    color: #FFF;    
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-
-.box2{ 
-    width: 100%;
-    height: 1024px;
-    background-color: white;
-    padding-left: 10%;   
-}
-.box2 .account{
-    color: #000000;
-    font-size: 36px;
-    font-weight: 600;
-    margin-top: 150px;
-    margin-left: 5%;
-    font-style: normal;
-    line-height: normal;
-}
-
-.box2 form{
-    max-width: 500px;
-    margin-top: 5%;    
-}
-
-.box2 form input[type="text"]{
+.left .logo{    
+    /* background: url(<path-to-image>), lightgray 0% 0% / 50px 50px repeat; */
+    background-color: #916BBF;
+    width: 100px;
+    height: 50px;
     margin-top: 20px;
-    padding: 20px 10px 20px;
-    width: 463px;
-    height: 71px;
-    border: 1px solid #D0D0D0;;
+    margin-left: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.left .logo img {
+    width: 50%;
+    height: 80%;
+    object-fit: contain;
+  }
+
+  .left .logo p {
+    margin-top: 11px;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+  }
+
+.left .text {
+    margin-top: 35px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 3.5rem;
+  }
+
+  .left .phone {
+    width: 400px;
+    height: 360px;
+    /* background-color: red; */
+    margin-left: 100px;
+  }
+
+  .left .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+.box .right{ 
+    width: 50%;
+    height: 80vh;
+    margin-top: 50px;   
+}
+.right h3 {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.right form {
+    width: 60%;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: justify;
+}
+
+.right form input[type="text"],
+.right form input[type="password"] {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #000000b0;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.password-container {
+    position: relative;
+  }
+  
+  #toggleButton {
+    position: absolute;
+    right: 160px;
+    top: 57%;
+    border: none;
+    font-size: 20px;
+    opacity: 0.6;
+    outline: none;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .right form label {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .right form input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-top: 10px;
+  }
+  
+  .right form .privy {
+    color: #000000;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+.right form .privy a {
+  color: #916bbf;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+.right form .privy a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.right form input[type="submit"] {
+    background-color: #916bbf;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
     outline: none;
     font-size: 18px;
-    color: #00000079;
-    border-radius: 10px;
-    background-color: #FFFFFF;    
-}
-
-.box2 form #mycheckbox{
-    margin-top: 7%;
-    font-size: 16px;
-    font-style: normal;
+    cursor: pointer;
     font-weight: 500;
-    line-height: normal;
-}
-.box2 form #mycheckbox:hover{
-    cursor:pointer;      
-}
-
-.box2 form .pop{
-    color: #916BBF;    
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;    
-}
-
-.box2 form input[type="submit"]{
-    margin-top: 50px;    
-    padding: 15px 70px;
-    background-color: #916BBF;
-    color: #ffffff;
-    font-size: 25px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    cursor:pointer;
-    transition: all 0.5s ease-in-out;
-    width: 463px;
-    height: 71px;
-    flex-shrink: 0;  
-}
-
-.box2 form input[type="submit"]:hover{
-    background-color: #FCF7E8;
+    transition: all 0.6s ease;
+  }
+  
+  .right form input[type="submit"]:focus {
+    background-color: #ffffff;
     color: #000000;
-} 
+  }
+  
+  .right .icons {
+    text-align: center;
+    margin-top: 30px;
+  }
 
-.box2 .social input[type="submit"]{
-    margin-top: 50px;
-    padding: 15px 70px;
-    font-size: 10px;    
-    width: 220px;
-    height: 50px;
-    flex-shrink: 0;
-    border-radius: 5px;   
-    border: none;
-    outline: none; 
-    cursor:pointer; 
-    /* transition: all 0.5s ease; */
-}
-/* .box2 .social input[type="submit"]{
-    background-color: #FCF7E8;
-    color: #000000;
-} */
-
-.box2 .social #google{
-    background: rgba(204, 76, 76, 0.10);  
-    color: #E33E2B;   
+.icons a.google{
+    background-color: #cc4c4c25;
+    color: #E33E2B;
     font-size: 12px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal; 
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    margin-right: 80px;
 }
 
-.box2 .social #facebook{      
-    background: rgba(76, 142, 204, 0.09);
-    color: #1877F2;   
+.icons a i.fa-google{
+    margin-right: 7px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.icons a i.fa-facebook{
+    margin-right: 7px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.icons a.facebook{
+    background-color: #4c8ecc25;
+    color: #1877F2;
     font-size: 12px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
 }

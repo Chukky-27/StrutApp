@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="strut.css" />
-    <link rel="stylesheet" href="
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,53 +17,74 @@
     <div class="box">
       <div class="left">
         <div class="logo">
-          <img src="login img/Group 1.svg" alt="" class="grp" />
-          <img src="login img/Strut.svg" alt="" class="txt" />
+          <img src="login img/Group 1.svg" alt="" />
+          <p>Strut</p>
+        </div>
 
-          <p class="text">Welcome to Strut <br />Join Us Now!</p>
-          <div class="phone">
-            <img src="login img/side-picture.svg" alt="" />
-          </div>
+        <p class="text">Welcome to Strut <br />Join Us Now!</p>
+
+        <div class="phone">
+          <img src="login img/side-picture.svg" alt="" />
         </div>
       </div>
-      <div class="box2">
-        <div class="right">
-          <p class="account">Create New Account</p>
-          <form action="">
-            <label for="">Full Name</label><br />
+
+      <div class="right">
+        <h3>Create New Account</h3>
+
+        <form action="">
+          <label for="">Full Name</label><br />
+          <br />
             <input
               type="text"
               placeholder="Enter Your Full Name"
               required
-            /><br />
-            <label for="">Email</label><br />
+            />
+          <br />
+
+          <label for="">Email</label><br />
+          <br />
             <input
               type="text"
               placeholder="itshaghighi@yahoo.com"
               required
-            /><br />
-            <label for="">Password</label><br />
-            <input
-              type="text"
-              placeholder="Enter Your Password"
-              required
-            /><br />
-            <input type="checkbox" id="mycheckbox" required /><label
-              for="mycheckbox"
-            >
-              I agree with the <span class="pop">Terms of services</span> and
-              <span class="pop">Privacy Policies</span></label
-            ><br />
-            <input type="submit" value="Sign Up" />
-          </form>
-          <div class="social">
-            <img src="login img/Group 2.svg" alt="" class="google" />
-            <input type="submit" value="Login with Google" id="google" />
-            <img src="login img/Group 3.svg" alt="" class="facebook" />
-            <input type="submit" value="Login with Facebook" id="facebook" />
+            />
+          <br />
+
+          <div class="Password-container">
+            <label for="Password">Password</label><br />
+            <br />
+            <input 
+              type="text" 
+              placeholder="Enter Your Password" 
+              required 
+            />
+
+            <button type="button" id="toggleButton" onclick="togglePassword()">
+              <i class="fa-solid fa-eye" id="eye-icon"></i>
+            </button>
           </div>
+
+          <input type="checkbox" required />
+          <span class="privy">I agree with the <a href="">Terms of services</a> and
+            <a href="">Privacy Policy</a>
+          </span
+          <br />
+
+          <input type="submit" value="Sign Up" />
+        </form>
+
+        <div class="icons">
+          <a href="" class="google">
+            <i class="fa-brands fa-google"></i>Login with Google</a
+          >
+          <!-- <input type="submit" value="Login with Google" id="google" /> -->
+          <a href="" class="facebook"
+            ><i class="fa-brands fa-facebook"></i>Login with Facebook</a
+          >
+          <!-- <input type="submit" value="Login with Facebook" id="facebook" /> -->
         </div>
       </div>
     </div>
+    <script src="strut.js"></script>
   </body>
 </html>
